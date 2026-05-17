@@ -1,0 +1,29 @@
+{
+  "required_keys": [
+    "id",
+    "title",
+    "platform",
+    "release_year",
+    "developer.name",
+    "developer.country",
+    "genre",
+    "inventory.stock",
+    "inventory.price",
+    "reviews[0].source",
+    "reviews[0].score"
+
+  ],
+  "expected_types": {
+    "id": "integer",
+    "title": "string",
+    "platform": "string",
+    "release_year": "integer",
+    "developer.name": "string",
+    "developer.country": "string",
+    "genre": "string",
+    "inventory.stock": "integer",
+    "inventory.price": "number",
+    "reviews[0].source": "string",
+    "reviews[0].score": "number"
+  }
+}

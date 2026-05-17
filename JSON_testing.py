@@ -34,7 +34,11 @@ def validate_response(response, rules):
     # Mapping dictionary
     type_dict = {
         "string": str,
-        "integer": int
+        "integer": int,
+        "number": (int, float),
+        "object": dict,
+        "array": list,
+        "boolean": bool
     }
 
     type_check_list = []

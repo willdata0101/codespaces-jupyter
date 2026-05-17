@@ -1,16 +1,16 @@
-nested_response = {
-    "movie": {
-        "title": "The Wizard of Oz",
-        "year": 1939
-    }
-}
+# nested_response = {
+#     "movie": {
+#         "title": "The Wizard of Oz",
+#         "year": 1939
+#     }
+# }
 
-nested_response_2 = {
-  "movies": [
-    { "title": "A", "year": 2000 },
-    { "title": "B", "year": "2001" }
-  ]
-}
+# nested_response_2 = {
+#   "movies": [
+#     { "title": "A", "year": 2000 },
+#     { "title": "B", "year": "2001" }
+#   ]
+# }
 
 json_path = "movies[0].year".split(".")
 
@@ -41,4 +41,4 @@ def get_json_value(path, response):
     
     return False, None
             
-found, value = get_json_value(json_path, nested_response)
+#found, value = get_json_value(json_path, nested_response)

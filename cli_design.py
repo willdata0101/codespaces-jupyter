@@ -28,9 +28,17 @@ def display_report(results, overall_passed):
         expected = result.get("expected_type", "")
         actual = result.get("actual_type", "")
 
-        details = reason
-        if expected or actual:
-            details = f"{reason} | expected: {expected}, got: {actual}"
+        details = ""
+        if not result["passed"]:
+            reason = result.get("reason", "")
+
+            expected = result.get("expected_type", "")
+            actual = result.get("actual_type", "")
+
+            if expected or actual:
+                details = f"{reason} | expected: {expected}, got: {actual}"
+            else:
+                details = reason
 
         table.add_row(status, path, check, details)
 
