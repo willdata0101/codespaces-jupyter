@@ -92,13 +92,15 @@ def main():
     rules_data = load_json(args.rules)
 
     results = validate_response(response_data, rules_data)
+
     overall_passed = results["overall_passed"]
+    all_checks = results["all_checks"]
 
     # Pre-retro CLI code (commented out for now)
     # results_json = json.dumps(results, indent=2)
     # print(results_json)
 
-    display_report(results, overall_passed)
+    display_report(all_checks, overall_passed)
 
 
 
