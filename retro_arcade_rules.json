@@ -1,29 +1,32 @@
 {
   "required_keys": [
-    "id",
-    "title",
-    "platform",
-    "release_year",
-    "developer.name",
-    "developer.country",
-    "genre",
-    "inventory.stock",
-    "inventory.price",
-    "reviews[0].source",
-    "reviews[0].score"
+    "games",
+    "games[0].id",
+    "games[0].title",
+    "games[0].platform",
+    "games[0].release_year",
+    "games[0].developer.name",
+    "games[0].developer.country",
+    "games[0].genre",
+    "games[0].inventory.stock",
+    "games[0].inventory.price",
+    "games[0].reviews[0].source",
+    "games[0].reviews[0].score"
 
   ],
+
   "expected_types": {
-    "id": "integer",
-    "title": "string",
-    "platform": "string",
-    "release_year": "integer",
-    "developer.name": "string",
-    "developer.country": "string",
-    "genre": "string",
-    "inventory.stock": "integer",
-    "inventory.price": "number",
-    "reviews[0].source": "string",
-    "reviews[0].score": "number"
+    "games": "array",
+    "games[0].id": "integer",
+    "games[0].title": "string",
+    "games[0].platform": "string",
+    "games[0].release_year": "integer",
+    "games[0].developer.name": "string",
+    "games[0].developer.country": "string",
+    "games[0].genre": "string",
+    "games[0].inventory.stock": "integer",
+    "games[0].inventory.price": "number",
+    "games[0].reviews[0].source": "string",
+    "games[0].reviews[0].score": "number"
   }
 }

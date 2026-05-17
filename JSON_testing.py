@@ -93,6 +93,7 @@ def main():
             return json.load(f)
         
     response_data = load_json(args.response)
+    print(response_data.keys())
     rules_data = load_json(args.rules)
 
     results = validate_response(response_data, rules_data)
