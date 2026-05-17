@@ -1,0 +1,4 @@
+{
+    "required_keys": ["title", "year"],
+    "expected_types": {"title": "string", "year": "integer"}
+}

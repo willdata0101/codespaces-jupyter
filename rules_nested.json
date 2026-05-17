@@ -1,0 +1,10 @@
+{
+    "required_keys": [
+        "movies[0].title", 
+        "movies[0].year"
+    ],
+    "expected_types": {
+        "movies[0].title": "string",
+        "movies[0].year": "integer"
+    }
+}
